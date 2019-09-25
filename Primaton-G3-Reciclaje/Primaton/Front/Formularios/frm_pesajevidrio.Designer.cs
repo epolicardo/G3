@@ -35,13 +35,13 @@
             this.btSiguiente = new System.Windows.Forms.Button();
             this.lblTotaldePuntos = new System.Windows.Forms.Label();
             this.lblPuntosGanados = new System.Windows.Forms.Label();
-            this.lblPuntosAcumulados = new System.Windows.Forms.Label();
             this.btPesar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblPeso = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,11 +49,11 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(451, 101);
+            this.label2.Location = new System.Drawing.Point(364, 93);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(124, 20);
+            this.label2.Size = new System.Drawing.Size(168, 20);
             this.label2.TabIndex = 21;
-            this.label2.Text = "Estás pesando: ";
+            this.label2.Text = "Estás pesando:  Vidrio";
             // 
             // btCancelar
             // 
@@ -80,7 +80,7 @@
             this.btSiguiente.Name = "btSiguiente";
             this.btSiguiente.Size = new System.Drawing.Size(89, 29);
             this.btSiguiente.TabIndex = 18;
-            this.btSiguiente.Text = "Siguiente";
+            this.btSiguiente.Text = "Finalizar";
             this.btSiguiente.UseVisualStyleBackColor = true;
             this.btSiguiente.Click += new System.EventHandler(this.BtSiguiente_Click);
             // 
@@ -104,16 +104,6 @@
             this.lblPuntosGanados.TabIndex = 16;
             this.lblPuntosGanados.Text = "Puntos ganados:";
             // 
-            // lblPuntosAcumulados
-            // 
-            this.lblPuntosAcumulados.AutoSize = true;
-            this.lblPuntosAcumulados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPuntosAcumulados.Location = new System.Drawing.Point(126, 20);
-            this.lblPuntosAcumulados.Name = "lblPuntosAcumulados";
-            this.lblPuntosAcumulados.Size = new System.Drawing.Size(230, 20);
-            this.lblPuntosAcumulados.TabIndex = 15;
-            this.lblPuntosAcumulados.Text = "Puntos acumulados a la fecha: ";
-            // 
             // btPesar
             // 
             this.btPesar.Location = new System.Drawing.Point(454, 140);
@@ -128,7 +118,7 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(130, 140);
+            this.pictureBox1.Location = new System.Drawing.Point(16, 69);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(260, 226);
@@ -139,7 +129,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(126, 80);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(264, 58);
             this.label1.TabIndex = 11;
@@ -174,6 +164,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click_1);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(365, 29);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(132, 20);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "Usuario: Emiliano";
+            // 
             // frm_pesajevidrio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -186,9 +186,9 @@
             this.Controls.Add(this.btCancelar);
             this.Controls.Add(this.btVolver);
             this.Controls.Add(this.btSiguiente);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.lblTotaldePuntos);
             this.Controls.Add(this.lblPuntosGanados);
-            this.Controls.Add(this.lblPuntosAcumulados);
             this.Controls.Add(this.btPesar);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
@@ -208,12 +208,12 @@
         private System.Windows.Forms.Button btSiguiente;
         private System.Windows.Forms.Label lblTotaldePuntos;
         private System.Windows.Forms.Label lblPuntosGanados;
-        private System.Windows.Forms.Label lblPuntosAcumulados;
         private System.Windows.Forms.Button btPesar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblPeso;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -28,7 +28,7 @@ namespace Primaton.Front.Formularios
         private void Button1_Click_1(object sender, EventArgs e)
         {
             lblPuntosGanados.Visible = true;
-            lblPuntosAcumulados.Visible = true;
+            //lblPuntosAcumulados.Visible = true;
             double peso = Convert.ToDouble(lblPeso.Text);
             peso = peso * 0.5;
             lblPuntosGanados.Text = "Estás sumando: " + Convert.ToString(peso);
@@ -41,11 +41,28 @@ namespace Primaton.Front.Formularios
         }
 
         private void BtSiguiente_Click(object sender, EventArgs e)
+
+
         {
             //Form siguiente = new frm_SelectBenefit();
             //siguiente.ShowDialog();
             ////Llamar metodo para grabar registro
-         
+            Usuarios usuario = new Usuarios();
+            Contenedor contenedor = new Contenedor();
+            TipoResiduo tipo = new TipoResiduo();
+            Registros registro = new Registros();
+            tipo.Id = 1;
+            contenedor.Id = 1;
+            contenedor.tamanio = 100;
+            usuario.DNI = "30782195";
+            registro.Fecha = DateTime.Now;
+            registro.Usuario = usuario;
+            registro.Tipo=tipo;
+            registro.Cantidad = Int32.Parse(lblPeso.Text);
+            registro.Contenedor=contenedor;
+
+            registro.GrabarRegistro(registro);
+
 
             //usuario
             //peso

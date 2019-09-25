@@ -17,7 +17,7 @@ namespace Primaton
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_Inicial());
+            Application.Run(mainForm: new frm_Inicial());
         }
     }
 }
